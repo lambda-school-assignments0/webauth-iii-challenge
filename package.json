@@ -1,0 +1,25 @@
+{
+  "name": "webauth-iii-challenge",
+  "version": "1.0.0",
+  "description": "lambda-school-webauth-iii-challenge",
+  "main": "index.js",
+  "repository": "https://github.com/LambdaSchool/webauth-iii-challenge.git",
+  "author": "schang1146 <sammychang2185@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "server": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "helmet": "^3.20.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.19.2",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
