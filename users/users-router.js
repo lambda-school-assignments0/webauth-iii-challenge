@@ -23,7 +23,7 @@ router.get("/:id", restricted, (req, res) => {
         .then(user => {
             res.json(user);
         })
-        .catch(err => res.status(500).json({ message: "", err }));
+        .catch(err => res.status(500).json({ message: "Now, young Skywalker, you will die.", err }));
 });
 
 router.get("/department/:department", restricted, (req, res) => {
@@ -33,7 +33,7 @@ router.get("/department/:department", restricted, (req, res) => {
         .then(users => {
             res.json(users);
         })
-        .catch(err => res.status(500).json({ message: "", err }));
+        .catch(err => res.status(500).json({ message: "Now, young Skywalker, you will die.", err }));
 });
 
 module.exports = router;

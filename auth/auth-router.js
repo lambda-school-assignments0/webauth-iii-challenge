@@ -13,7 +13,7 @@ router.post("/register", (req, res) => {
 
     Users.add(user)
         .then(res.status(201).json(user))
-        .catch(err => res.status(500).json({ message: "It's a trap!", err }));
+        .catch(err => res.status(500).json({ message: "Now, young Skywalker, you will die.", err }));
 });
 
 router.post("/login", (req, res) => {
@@ -30,10 +30,10 @@ router.post("/login", (req, res) => {
                     token
                 });
             } else {
-                res.status(401).json({ message: `Halt! Invalid Credentials!` });
+                res.status(401).json({ message: "It's a trap!" });
             }
         })
-        .catch(err => res.status(500).json({ message: "Access denied!", err }));
+        .catch(err => res.status(500).json({ message: "Now, young Skywalker, you will die.", err }));
 });
 
 function genToken(user) {
