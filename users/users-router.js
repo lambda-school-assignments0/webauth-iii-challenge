@@ -17,7 +17,7 @@ router.get("/", restricted, (req, res) => {
 });
 
 router.get("/:id", restricted, (req, res) => {
-    const { id } = req.params;
+    const id = req.params;
 
     Users.findById(id)
         .then(user => {

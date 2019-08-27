@@ -13,7 +13,7 @@ function findBy(category) {
 }
 
 function findById(id) {
-    return db("users").where("id", "=", id);
+    return db("users").where(id).first();
 }
 
 module.exports = {
