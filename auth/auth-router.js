@@ -36,6 +36,20 @@ router.post("/login", (req, res) => {
         .catch(err => res.status(500).json({ message: "Now, young Skywalker, you will die.", err }));
 });
 
+router.delete("/logout", (req, res) => {
+    if (req.session) {
+        req.session.destroy((err) => {
+            if (err) {
+                res.status(400).send("Unable to logout...");
+            } else {
+                res.send("Signed out!");
+            }
+        })
+    } else {
+        res.end();
+    }
+})
+
 function genToken(user) {
     const payload = {
         subject: "username",

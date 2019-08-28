@@ -1,0 +1,54 @@
+.signin {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 25px;
+
+  border: 1px #ced4da solid;
+  border-radius: 10px;
+}
+
+.signin h2 {
+  margin-bottom: 25px;
+}
+
+.signin .form-text {
+  margin-bottom: 20px;
+}
+
+.signup {
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 25px;
+
+  border: 1px #ced4da solid;
+  border-radius: 10px;
+}
+
+.signup h2 {
+  margin-bottom: 25px;
+}
+
+.signup .form-text {
+  margin-bottom: 20px;
+}
+
+.users {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.users h2 {
+  margin: 25px;
+}
+
+.users h4 {
+  cursor: pointer;
+}
+
+.users button {
+  margin: 25px 0;
+}
+
+.users-list {
+  margin: 25px;
+}
