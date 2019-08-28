@@ -10,10 +10,9 @@ import { ListGroup, Button } from "reactstrap";
 
 class Users extends Component {
     handleSignout = e => {
-        e.preventDefault();
-        console.log(this)
         this.props
             .signout();
+        window.location.reload(); // hotfix
     };
 
     componentDidMount() {
